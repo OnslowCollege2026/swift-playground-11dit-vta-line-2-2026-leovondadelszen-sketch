@@ -5,23 +5,23 @@
 struct SwiftPlayground {
     static func main() {
     print("Enter a number:")
-        let number1 = readLine()
+        let number1 = readLine()!
         print("Enter a noun:")
-        let noun3 = readLine()
+        let noun3 = readLine()!
         print("Enter an adjective:")
-        let adjective1 = readLine()
+        let adjective1 = readLine()!
     print("Enter a noun:")
-        let noun1 = readLine()
+        let noun1 = readLine()!
         print("Enter a verb:")
-        let verb1 = readLine()
+        let verb1 = readLine()!
         print("Enter a time value e.g hour:")
-        let timevalue1 = readLine()
+        let timevalue1 = readLine()!
         print("Enter a verb:")
-        let verb2 = readLine()
+        let verb2 = readLine()!
         print("Enter a verb:")
-        let verb3 = readLine()
+        let verb3 = readLine()!
         print("Enter a noun:")
-        let noun2 = readLine()
+        let noun2 = readLine()!
         
     
 
