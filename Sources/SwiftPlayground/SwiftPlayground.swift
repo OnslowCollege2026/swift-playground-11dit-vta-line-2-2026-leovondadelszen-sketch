@@ -27,5 +27,16 @@ struct SwiftPlayground {
 
         let madLibString = "In the future,\(noun3) looked down on earth and observed a lot. After looking for \(number1) they noticed there was a \(adjective1) \(noun1) who loved to \(verb1) every day. They liked to run for \(timevalue1) at a time. After a good run, \(noun1) liked to \(verb2) and then \(verb3) \(noun2)."
         print(madLibString)
+
+        print("Enter your age:")
+        let userInput = readLine()!
+        let age = Int(userInput)!
+        let isEven = (age % 2) == 0
+        let isOdd = (age % 2) != 0
+
+       
+        print(isEven)
+        print(isOdd)
+
     }   
 }
