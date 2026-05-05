@@ -54,5 +54,36 @@ let knowsSecret = userInput == "halibut"
 let canEnterBar = isOldEnough && knowsSecret
 
 print(canEnterBar)
+
+
+
+print("Enter your score: ")
+let userScore = Int(readLine()!)!
+
+if userScore >= 90 && userScore <= 99 {
+print(" A+: Congratulations! You Passed in the top 10% of individuals!")
+} else if userScore < 50 && userScore > 40 {
+print("You Failed. But fortunately you are allowed to retake the test as your score was very close to a passing grade.")
+} else if userScore >= 85 && userScore <= 89 {
+print("A: You passed in the top 20% of students")
+} else if userScore >= 80 && userScore <= 84 {
+print("A-: You passed in the top 25% of students")
+} else if userScore >= 75 && userScore <= 79 {
+print("B+: You passed in the top 30% of students")
+} else if userScore >= 70 && userScore <= 74 {
+print("B: You passed in the top 40% of students")
+} else if userScore >= 65 && userScore <= 69 {
+print("B-: You Passed with an average score!")
+} else if userScore >= 60 && userScore <= 64 {
+print("C+: You Passed with an average score!")
+} else if userScore >= 55 && userScore <= 59 {
+print("C: You Passed!")
+} else if userScore >= 50 && userScore <= 54 {
+print("D: You Passed!")
+} else if userScore == 100 {
+print("A++: You Passed with a perfect score!")
+} else { 
+print("You Failed!")    
+}
     }   
 }
