@@ -102,7 +102,34 @@ let userAge = Int(readLine()!)!
 if userAge =< 12{
  print("")   
 }
-  
+  //enters words from 100-1 and determines whether it is divisible by 3
+    {
+stride(from: 100, to: 0, by: -1).forEach { i in
+print(i) 
+if (i % 3 ) != 0 {
+    print("Remainder for NUM is REM")
+} else {
+    print("No remainder for NUM")
+
+}
+}
+(1...5).forEach { number in
+   print(number * 2)
+}
+//prints words in a sentence adding one word per line
+var sentence = ""
+let words = ["I", "Write", "Swift"]
+words.forEach { word in
+sentence = "\(sentence) \(word)"
+print(sentence)
+}
+
+var counter = 10
+
+while counter > 0 {
+    print("\(counter) Seconds remaining!")
+    counter = counter - 1
+}
   
   
     }   
