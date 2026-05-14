@@ -130,7 +130,47 @@ while counter > 0 {
     print("\(counter) Seconds remaining!")
     counter = counter - 1
 }
-  
+ 
+ 
+  var totalPrice = 0
+var isRunning = true
+while isRunning { print("Welcome to Cinema Tickets.")
+print("Type C for a Child ticket: $8")
+print("Type A for an Adult ticket: $12")
+print("Type S for a Senior citizen ticket: $10")
+print("Type Q to exit the menu.")
+print("Please enter an option.")
+let userInput = readLine()!.lowercased()
+let result = userInput
+
+
+
+if result == "a"{
+    totalPrice += 12
+    print("You Have selected an Adult ticket")
+    print("Current total is $\(totalPrice)")
+}
+else if result == "c"{
+    totalPrice += 8
+    print("You Have selected a Child ticket")
+    print("Current total is $\(totalPrice)")
+}
+else if result == "s"{
+    totalPrice += 10
+    print("You Have selected a Senior Citizen ticket")
+    print("Current total is $\(totalPrice)")
+}
+else if result == "q"{
+    print("Your total is $\(totalPrice)")
+ isRunning = false
+}
+else{
+    print("Invalid option. Please try again.")
+}
+
+
+}
   
     }   
+}
 }
