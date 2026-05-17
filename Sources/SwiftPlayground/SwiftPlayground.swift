@@ -172,5 +172,44 @@ else{
 }
   
     }   
+    var invitees:[String] = []
+var adding = true
+var finished = false
+var subtracting = false
+
+while adding == true {
+    print(invitees)
+    print("Choose a person to invite to a party!")
+    let userInput = readLine()!
+    let name = userInput
+    
+
+if name == "" {
+    adding = false
+    subtracting = true
+} else {
+invitees.append(userInput)
+}
+}
+while subtracting == true {
+print("Choose a person to remove from the party! Or enter 'Finished' to complete the list.")
+print("Current list is \(invitees)")
+let userInput = readLine()!
+let removedname = userInput
+if removedname == "Finished" {
+    finished = true
+    adding = false
+    subtracting = false
+        print("Your Final Birthday list consists of \(invitees).")
+} else{
+    if let index = invitees.firstIndex(of:removedname) {
+    invitees.remove(at: index)}
+}
+}
+
+
+
+
+
 }
 }
