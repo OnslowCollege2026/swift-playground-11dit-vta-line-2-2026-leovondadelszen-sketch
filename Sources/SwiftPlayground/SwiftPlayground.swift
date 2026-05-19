@@ -207,6 +207,29 @@ if removedname == "Finished" {
 }
 }
 
+var componentlist: [String] = []
+    var isRunning = true
+
+while isRunning {
+print("Select Your Ingredients!")
+let ingredient = readLine()!.lowercased()
+if ingredient == ""{
+isRunning = false
+print("Your Ingredients are\(componentlist)")
+    if let index = componentlist.firstIndex(of: "cheese") {
+    print("Eww gross")
+    print("Don't Start Cooking!") }
+    else if let index = componentlist.firstIndex(of: "chocolate") {
+    print("Yum!")
+print("Let's Start Cooking!")
+}
+    else { print("Let's Start Cooking!")
+}
+
+}else{
+componentlist.append(ingredient)
+    }
+}
 
 
 
