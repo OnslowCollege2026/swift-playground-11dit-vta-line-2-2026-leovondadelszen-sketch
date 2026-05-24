@@ -243,7 +243,40 @@ if let input = readLine(), let age = Int(input) {
 } else {
     print("Please enter a number.")
 }
+var isRunning = true
 
+while isRunning == true{
+print("Enter the length of the movie in minutes:")
+
+let userInput = readLine()! 
+
+if let movieLength = Int(userInput) {
+    if movieLength < 30 || movieLength > 300 {
+        print("Movie length out of bounds.")
+    } else {
+        print("Movie length accepted: \(movieLength) minutes.")
+    }
+} else if  let movieLength = Double(userInput){
+    if movieLength < 30.0 || movieLength > 300.0 {
+        print("Movie length out of bounds.")
+    } else {
+        print("Movie length accepted: \(movieLength) minutes.")
+    }
+    } 
+    else if let movieLength = ""{
+        
+    }
+else {
+    print("Please enter a valid number for the movie length, or 'Enter' to Confirm Movies")
+}
+
+
+
+
+
+
+
+}
 
 
 }
