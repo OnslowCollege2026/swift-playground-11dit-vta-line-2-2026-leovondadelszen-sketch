@@ -8,7 +8,7 @@ struct SwiftPlayground {
         
         print("Please Select an age range allowed into the bar")
         print("Lowest Value Here!")
-        let lowerage: userInput
+    
         var age: Int? = nil
 var attempts = 10
 var running = true
