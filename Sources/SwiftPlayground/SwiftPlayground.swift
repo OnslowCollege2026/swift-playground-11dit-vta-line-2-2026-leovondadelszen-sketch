@@ -5,11 +5,19 @@
 struct SwiftPlayground {
     static func main() {
         
-        
-      
+        let pricePerItem: Double = 19.99
+        let quantity: Double = 3.0
+        let taxRate = 15
+
+print("Price per item: $\(pricePerItem)")
+print("Quantity: \(quantity)")
+print("Subtotal: $\(19.99 * 3.0)")
+print("Tax (\(taxRate)%): $\(19.99 * 3.0 * 0.15)")
+print("Total: $\(19.99 * 3.0 * 1.15)")
+
     }
 }
-//This makes sure that the number is an integer.
+
 
 
 
