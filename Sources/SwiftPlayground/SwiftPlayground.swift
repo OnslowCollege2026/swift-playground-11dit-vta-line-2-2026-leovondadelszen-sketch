@@ -6,7 +6,6 @@ struct SwiftPlayground {
     static func main() {
 
 
-
     }
 }
 
