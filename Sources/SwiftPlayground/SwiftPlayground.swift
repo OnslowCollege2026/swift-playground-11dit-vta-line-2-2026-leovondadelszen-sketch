@@ -4,7 +4,7 @@
 @main
 struct SwiftPlayground {
     static func main() {
-let true = true
+var accepted = false
 
 func input(prompt: String, from: Int, to: Int) -> Int {
     while true {
@@ -25,17 +25,11 @@ let age: Int = input(prompt: "What is your age?", from: 0, to: 100)
 
 ///This prints out a different set of code depending on what number is inputed
 switch age {
-    case 0: print("Hello, little baby!")
-    
-    case ...17: print("You are too young.")
-    default: print("Welcome!")
+    case 0: print("Hello, little baby!"); print(accepted)
+    case ...17: print("You are too young."); print(accepted)
+    default: print("Welcome!"); accepted = true; print(accepted)
 }
-} 
+}
 askForAge()
-
-    }
 }
-
-
-
-
+}
