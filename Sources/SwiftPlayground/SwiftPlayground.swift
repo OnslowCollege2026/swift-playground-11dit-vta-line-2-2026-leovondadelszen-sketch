@@ -22,7 +22,7 @@ print("3. Cave Wētā")
 print("4. Putoko")
 print("5. Pūngāwerewere")
 print("6. Ngaokeoke")
-print("7.  Waemano")
+print("7. Waemano")
 print("8. Kapowai")
 
 }
@@ -33,10 +33,16 @@ print("Welcome to Zelandia Tracker.")
 let animalType = readLine()!.lowercased()
     if animalType == "bird" {
         print("Which bird did you see?")
-print(birds)
+birds()
+print("Enter a number between 1-8 to determine what insect you saw.")
+
 } else if animalType == "insect" {
 print("Which insect did you see?")
-print(insects)
+insects()
+print("Enter a number between 1-8 to determine what insect you saw.")
+let insectType: Int = readLine()!
+} else {
+    print("Please enter a valid input. Either 'bird' or 'insect'.")
 }
 
 }
