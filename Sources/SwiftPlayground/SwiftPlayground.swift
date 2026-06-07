@@ -14,6 +14,14 @@ print("5. Kiwi")
 print("6. Pāteke")
 print("7. Tūī")
 print("8. Kererū")
+let tieke = 1
+let kaka = 2
+let takahe = 3
+let hihi = 4
+let kiwi = 5
+let pateke = 6
+let tui = 7
+let kereru = 8
 }
 func insects() {
 print("1. Giant Wētā")
@@ -24,6 +32,14 @@ print("5. Pūngāwerewere")
 print("6. Ngaokeoke")
 print("7. Waemano")
 print("8. Kapowai")
+let giantWeta = 1
+let treeWeta = 2
+let caveWeta = 3
+let putoko = 4
+let pungawerewere = 5
+let ngaokeoke = 6
+let waemano = 7
+let kapowai = 8
 
 }
 while isRunning == true {
@@ -40,7 +56,9 @@ print("Enter a number between 1-8 to determine what insect you saw.")
 print("Which insect did you see?")
 insects()
 print("Enter a number between 1-8 to determine what insect you saw.")
-let insectType: Int = readLine()!
+let insectType = Int(readLine()!)!
+
+
 } else {
     print("Please enter a valid input. Either 'bird' or 'insect'.")
 }
