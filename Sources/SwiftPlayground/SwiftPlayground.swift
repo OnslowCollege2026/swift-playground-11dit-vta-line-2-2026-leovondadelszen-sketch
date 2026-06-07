@@ -7,10 +7,13 @@ struct SwiftPlayground {
 var isRunning = true
 
 
-while isRunning {
+while isRunning == true {
+print("Welcome to Zelandia Tracker.")
+    print("Did you see a Bird or Insect?")
+    print("Type 'bird' for Bird or 'insect' for Insect.")
 
-    
+
+
 }
-
 }
 }
