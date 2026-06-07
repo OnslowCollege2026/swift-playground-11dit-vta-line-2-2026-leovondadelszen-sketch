@@ -4,6 +4,13 @@
 @main
 struct SwiftPlayground {
     static func main() {
+var isRunning = true
+
+
+while isRunning {
+
+    
+}
 
 }
 }
