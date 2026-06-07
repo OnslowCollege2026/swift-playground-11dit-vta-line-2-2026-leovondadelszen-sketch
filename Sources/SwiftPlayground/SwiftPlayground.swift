@@ -5,59 +5,39 @@
 struct SwiftPlayground {
     static func main() {
 var isRunning = true
-func birds() {
-print("1. Tieke")
-print("2. Kākā")
-print("3. Takahē")
-print("4. Hihi")
-print("5. Kiwi")
-print("6. Pāteke")
-print("7. Tūī")
-print("8. Kererū")
-let tieke = 1
-let kaka = 2
-let takahe = 3
-let hihi = 4
-let kiwi = 5
-let pateke = 6
-let tui = 7
-let kereru = 8
-}
-func insects() {
-print("1. Giant Wētā")
-print("2. Tree Wētā")
-print("3. Cave Wētā")
-print("4. Putoko")
-print("5. Pūngāwerewere")
-print("6. Ngaokeoke")
-print("7. Waemano")
-print("8. Kapowai")
-let giantWeta = 1
-let treeWeta = 2
-let caveWeta = 3
-let putoko = 4
-let pungawerewere = 5
-let ngaokeoke = 6
-let waemano = 7
-let kapowai = 8
 
-}
+
+
+
 while isRunning == true {
 print("Welcome to Zelandia Tracker.")
     print("Did you see a Bird or Insect?")
     print("Type 'bird' for Bird or 'insect' for Insect.")
 let animalType = readLine()!.lowercased()
+let birds: [String] = ["Tieke", "Kākā", "Takahē", "Hihi", "Kiwi", "Pāteke", "Tūī", "Kererū"]
+let insects: [String] = ["Giant Wētā", "Tree Wētā", "Cave Wētā", "Putoko", "Pūngāwerewere", "Ngaokeoke", "Waemano", "Kapowai"]
     if animalType == "bird" {
         print("Which bird did you see?")
-birds()
+birds.enumerated().forEach{ index, bird in
+print("\(index + 1). \(bird)") }
 print("Enter a number between 1-8 to determine what insect you saw.")
 
 } else if animalType == "insect" {
 print("Which insect did you see?")
-insects()
+insects.enumerated().forEach{ index, insect in
+print("\(index + 1). \(insect)")}
 print("Enter a number between 1-8 to determine what insect you saw.")
 let insectType = Int(readLine()!)!
-
+switch insectType {
+case 1: print("Added a Giant Weta")
+case 2: print("Added a Tree Weta")
+case 3: print("Added a Cave Weta")
+case 4: print("Added a ")
+case 5: print("Added a ")
+case 6: print("Added a ")
+case 7: print("Added a ")
+case 8: print("Added a ")
+}
 
 } else {
     print("Please enter a valid input. Either 'bird' or 'insect'.")
