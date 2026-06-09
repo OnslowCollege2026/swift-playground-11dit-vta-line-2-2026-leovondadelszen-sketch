@@ -94,7 +94,7 @@ print("You Failed!")
 print(adultFares)
 let childFares: [Int] = [400, 600, 750]
 print(childFares)
-let ticketTypes: [string] = [24, 48, 72]
+let ticketTypes: [String] = [24, 48, 72]
 print(ticketTypes)
 print("How old are you? Please answer this question with an integer greater than zero.")
 let userAge = Int(readLine()!)!
