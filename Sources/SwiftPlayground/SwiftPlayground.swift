@@ -10,7 +10,7 @@ var isRunning = true
 
 
 while isRunning == true {
-print("Welcome to Zelandia Tracker.")
+print("Welcome to Zealandia Tracker.")
     print("Did you see a Bird or Insect?")
     print("Type 'bird' for Bird or 'insect' for Insect.")
 let animalType = readLine()!.lowercased()
@@ -20,7 +20,7 @@ let insects: [String] = ["Giant Wētā", "Tree Wētā", "Cave Wētā", "Putoko",
         print("Which bird did you see?")
 birds.enumerated().forEach{ index, bird in
 print("\(index + 1). \(bird)") }
-print("Enter a number between 1-8 to determine what insect you saw.")
+print("Enter a number between 1-8 to determine what bird you saw.")
 
 } else if animalType == "insect" {
 print("Which insect did you see?")
@@ -37,6 +37,7 @@ case 5: print("Added a ")
 case 6: print("Added a ")
 case 7: print("Added a ")
 case 8: print("Added a ")
+case 9...: print("Incorect Value, Please Try Again.")
 }
 
 } else {
