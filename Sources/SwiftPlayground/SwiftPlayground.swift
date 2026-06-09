@@ -6,7 +6,7 @@ struct SwiftPlayground {
     static func main() {
 var isRunning = true
 
-
+let insectsSpotted: [String] = [""]
 
 
 while isRunning == true {
@@ -29,15 +29,15 @@ print("\(index + 1). \(insect)")}
 print("Enter a number between 1-8 to determine what insect you saw.")
 let insectType = Int(readLine()!)!
 switch insectType {
-case 1: print("Added a Giant Weta")
-case 2: print("Added a Tree Weta")
-case 3: print("Added a Cave Weta")
-case 4: print("Added a ")
-case 5: print("Added a ")
-case 6: print("Added a ")
-case 7: print("Added a ")
-case 8: print("Added a ")
-case 9...: print("Incorect Value, Please Try Again.")
+case 1: print("Added a Giant Wētā")
+case 2: print("Added a Tree Wētā")
+case 3: print("Added a Cave Wētā")
+case 4: print("Added a Putoko")
+case 5: print("Added a Pūngāwerewere")
+case 6: print("Added a Ngaokeoke")
+case 7: print("Added a Waemano")
+case 8: print("Added a Kapowai")
+default: print("Incorect Value, Please Try Again.")
 }
 
 } else {
