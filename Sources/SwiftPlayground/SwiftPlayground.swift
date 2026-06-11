@@ -36,11 +36,11 @@ let confirmation = readLine()!.lowercased()
 if confirmation == "n" {
 isRunning = false
 let totalSpecies = Array(zip(speciesSeen, numberOfSeenTime))
+    print("Today You Saw:")
     totalSpecies.forEach { species in
-        print("Thank you for using Zealandia Tracker!")
-        print("Today You Saw:")
         print("\(species.1) \(species.0)")
-}
+} 
+print("Thank you for using Zealandia Tracker!")
 } else if confirmation == "y" {  
 } else {
     isRunning = false
@@ -51,7 +51,7 @@ let totalSpecies = Array(zip(speciesSeen, numberOfSeenTime))
         print("Today You Saw:")
         print("\(species.1) \(species.0)")
 }
-}
+}   
 } else if animalType == "insect" {
 print("Which insect did you see?")
 insects.enumerated().forEach{ index, insect in
@@ -70,7 +70,7 @@ if speciesSeen.contains(insectName){
 } else {
     print("Please enter a valid input. Either 'bird' or 'insect'.")
 }
-   
+
 }
 }
 }
