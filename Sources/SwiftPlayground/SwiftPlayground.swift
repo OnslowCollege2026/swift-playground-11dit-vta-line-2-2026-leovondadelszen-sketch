@@ -70,7 +70,6 @@ if speciesSeen.contains(insectName){
 } else {
     print("Please enter a valid input. Either 'bird' or 'insect'.")
 }
-
 }
 }
 }
