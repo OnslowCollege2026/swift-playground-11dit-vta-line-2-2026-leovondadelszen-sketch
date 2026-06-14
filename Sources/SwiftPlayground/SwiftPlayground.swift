@@ -28,12 +28,15 @@ print("How many hours did you sleep on Saturday Night?")
 let saturdaySleep = Int(readLine()!)!
 print("Added \(saturdaySleep) hours.")
 let weeklySleep = (mondaySleep + tuesdaySleep + wednesdaySleep + thursdaySleep + fridaySleep + saturdaySleep + sundaySleep)
-let averageSleep = weeklySleep / 7
+let averageSleep = double(weeklySleep / 7)
 print("You slept \(weeklySleep) hours this week!")
 print("That is a average of \(averageSleep) hours a night!")
 switch averageSleep {
-case ...5 : print("")
-case 6
+case ...5 : print("Concerning Sleep Total. Seek Help")
+case 6-7: print("Okay Sleep. Could be better.")
+case 7-8: print("Decent Sleep. Good Work!")
+case 8...: print("Wow! Amazing Sleep Levels!")
+default: print("Invalid Sleep Data")
 }
 }
 }
