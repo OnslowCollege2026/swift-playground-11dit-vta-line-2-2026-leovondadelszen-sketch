@@ -6,29 +6,35 @@ struct SwiftPlayground {
     static func main() {
 print("Welcome to Sleep Tracker.")
 print("Let's Start by recording your sleep.")
+var isInvalid = true
+while isInvalid == true{
 print("How many hours did you sleep on Sunday Night?")
-let sundaySleep = Int(readLine()!)!
+let sundaySleep = Double(readLine()!)!
 print("Added \(sundaySleep) hours.")
 print("How many hours did you sleep on Monday Night?")
-let mondaySleep = Int(readLine()!)!
+let mondaySleep = Double(readLine()!)!
 print("Added \(mondaySleep) hours.")
 print("How many hours did you sleep on Tuesday Night?")
-let tuesdaySleep = Int(readLine()!)!
+let tuesdaySleep = Double(readLine()!)!
 print("Added \(tuesdaySleep) hours.")
 print("How many hours did you sleep on Wednesday Night?")
-let wednesdaySleep = Int(readLine()!)!
+let wednesdaySleep = Double(readLine()!)!
 print("Added \(wednesdaySleep) hours.")
 print("How many hours did you sleep on Thursday Night?")
-let thursdaySleep = Int(readLine()!)!
+let thursdaySleep = Double(readLine()!)!
 print("Added \(thursdaySleep) hours.")
 print("How many hours did you sleep on Friday Night?")
-let fridaySleep = Int(readLine()!)!
+let fridaySleep = Double(readLine()!)!
 print("Added \(fridaySleep) hours.")
 print("How many hours did you sleep on Saturday Night?")
-let saturdaySleep = Int(readLine()!)!
+let saturdaySleep = Double(readLine()!)!
 print("Added \(saturdaySleep) hours.")
-let weeklySleep = (mondaySleep + tuesdaySleep + wednesdaySleep + thursdaySleep + fridaySleep + saturdaySleep + sundaySleep)
-let averageSleep = double(weeklySleep / 7)
+if sundaySleep > 24 || mondaySleep > 24 || tuesdaySleep > 24 || wednesdaySleep > 24 || thursdaySleep > 24 || fridaySleep > 24 || saturdaySleep > 24 {
+print("Invalid Sleep Time. Cannot Sleep more than 24 hours in a day.")
+
+}}
+let weeklySleep: Double = (mondaySleep + tuesdaySleep + wednesdaySleep + thursdaySleep + fridaySleep + saturdaySleep + sundaySleep)
+let averageSleep: Double = weeklySleep / 7.0
 print("You slept \(weeklySleep) hours this week!")
 print("That is a average of \(averageSleep) hours a night!")
 switch averageSleep {
