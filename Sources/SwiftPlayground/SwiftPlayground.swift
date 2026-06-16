@@ -7,8 +7,9 @@ struct SwiftPlayground {
 print("Welcome to Sleep Tracker.")
 print("Let's Start by recording your sleep.")
 var isInvalid = true
+let weekDays: [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 while isInvalid == true{
-print("How many hours did you sleep on Sunday Night?")
+for each print("How many hours did you sleep on Sunday Night?")
 let sundaySleep = Double(readLine()!)!
 print("Added \(sundaySleep) hours.")
 print("How many hours did you sleep on Monday Night?")
