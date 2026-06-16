@@ -9,27 +9,7 @@ print("Let's Start by recording your sleep.")
 var isInvalid = true
 let weekDays: [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 while isInvalid == true{
-for each print("How many hours did you sleep on Sunday Night?")
-let sundaySleep = Double(readLine()!)!
-print("Added \(sundaySleep) hours.")
-print("How many hours did you sleep on Monday Night?")
-let mondaySleep = Double(readLine()!)!
-print("Added \(mondaySleep) hours.")
-print("How many hours did you sleep on Tuesday Night?")
-let tuesdaySleep = Double(readLine()!)!
-print("Added \(tuesdaySleep) hours.")
-print("How many hours did you sleep on Wednesday Night?")
-let wednesdaySleep = Double(readLine()!)!
-print("Added \(wednesdaySleep) hours.")
-print("How many hours did you sleep on Thursday Night?")
-let thursdaySleep = Double(readLine()!)!
-print("Added \(thursdaySleep) hours.")
-print("How many hours did you sleep on Friday Night?")
-let fridaySleep = Double(readLine()!)!
-print("Added \(fridaySleep) hours.")
-print("How many hours did you sleep on Saturday Night?")
-let saturdaySleep = Double(readLine()!)!
-print("Added \(saturdaySleep) hours.")
+for weekDays.forEach { word in weekDays 
 if sundaySleep > 24 || mondaySleep > 24 || tuesdaySleep > 24 || wednesdaySleep > 24 || thursdaySleep > 24 || fridaySleep > 24 || saturdaySleep > 24 {
 print("Invalid Sleep Time. Cannot Sleep more than 24 hours in a day.")
 
