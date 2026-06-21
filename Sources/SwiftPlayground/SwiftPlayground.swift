@@ -12,8 +12,9 @@ let apps: [String] = ["Tiktok", "Youtube", "Instagram", "Snapchat", "Whatsapp", 
 let days: [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 if isRunning == true {
     let screenTimeLimit = Int(readLine()!)!
-    if screenTimeLimit == > 40 || < 7 {
-
+    if screenTimeLimit > 40 || screenTimeLimit < 7 {
+print("Lack of Parenting Skills.")
+print("Terminating Program.")
     }
 days.enumerated().forEach{ index, day in
 print("On \(day) how many hours did you spend on:")
