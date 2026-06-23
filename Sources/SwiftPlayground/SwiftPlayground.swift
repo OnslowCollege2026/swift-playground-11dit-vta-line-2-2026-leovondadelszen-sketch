@@ -23,6 +23,7 @@ if isRunning == true {
     if screenTimeLimit > 40 || screenTimeLimit < 7 {
 print("Lack of Parenting Skills.")
 print("Terminating Program.")
+
     }
 days.enumerated().forEach{ index, day in
 print("On \(day) how many hours did you spend on:")
