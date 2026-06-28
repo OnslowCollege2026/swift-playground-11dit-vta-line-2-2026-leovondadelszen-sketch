@@ -19,16 +19,18 @@ let days: [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 
 //This means that if the code is running then all of this code will run
 while isRunning == true {
+   //This says that the maximum amount of screen time set can be 40 hours.
     let maximumScreenTime = 40
+    //This says that the minimum amount of screen time set can be 7 hours.
     let minimumScreenTime = 7
     var validAppTime = true
     print("PARENTS! Please Enter a Weekly Screen Time Limit Here:")
 if let screenTimeLimit = Int(readLine()!), screenTimeLimit >= minimumScreenTime, screenTimeLimit <= maximumScreenTime {
 while validAppTime == true {
-    days.enumerated().forEach{ index, day in
+for day in days { 
 print("On \(day) how many hours did you spend on:")
 var dayAppTime: Double = 0.0
-apps.enumerated().forEach{ index, app in
+for app in apps {
 print("\(app):") 
 if let appTime = Double(readLine()!), appTime >= 0, appTime <= 24 {
 dayAppTime += appTime
@@ -36,26 +38,26 @@ dayAppTime += appTime
 } else {
     print("Invalid Daily Hours")
     validAppTime = false
+    break 
     
 
 }}
-
+if validAppTime == false || dayAppTime > 24 || dayAppTime < 0 {
+    print("Invalid Daily Device Usage.")
+    break
+} else {
     print("Total hours spent on \(day) were: \(dayAppTime)")
 totalAppTime += dayAppTime } 
 }
 
 
-while validAppTime == true {
+if validAppTime == true {
 let averageAppTime = totalAppTime / 7
 print("Total hours spent this week are: \(totalAppTime)")
 print("This is an average of \(averageAppTime) hours a day!")
 isRunning = false 
 }
-
-
-
-
-
+}
 } else {
     print("Invalid Integer. Please Select a reasonable maximum weekly hours of device usage.")
 }
