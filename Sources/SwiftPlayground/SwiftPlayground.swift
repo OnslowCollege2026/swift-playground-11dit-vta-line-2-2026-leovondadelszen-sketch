@@ -51,7 +51,7 @@ print("\(app):")
 //If the time you spent on the app is a viable time, it will add the time to your daily screen time
 if let appTime = Double(readLine()!), appTime >= 0, appTime <= 24 {
 dayAppTime += appTime
-//If the time you spent on the app isn't possible, then the code will restart. It will aslo sen you a message letting you know that your nmber wasn't allowed.
+//If the time you spent on the app isn't possible, then the code will restart. It will aslo sen you a message letting you know that your number wasn't allowed.
 } else {
     print("Invalid Daily Hours")
     validAppTime = false
@@ -59,10 +59,11 @@ dayAppTime += appTime
     
 
 }}
-//If at any point, the amount of hours you spent on any app isn't possible, then this will break and restart the second loop of code, only triggered when the first loop of code is restarted. It will aslo sen you a message letting you know that your nmber wasn't allowed.
+//If at any point, the amount of hours you spent on any app isn't possible, then this will break and restart the second loop of code, only triggered when the first loop of code is restarted. It will aslo sen you a message letting you know that your number wasn't allowed.
 if validAppTime == false || dayAppTime > 24 || dayAppTime < 0 {
     print("Invalid Daily Device Usage.")
     print("Restarting Program. Please type correct integers in future.")
+    validAppTime = false
     break
 
     //If the data is possible, the computer will calculate how many hours you spent on devices that day, and add it to your weekly screen time.
@@ -97,7 +98,7 @@ break
 } 
 //If the screen time limit set by the parent isn't reasonable. Then the question will repeat and this code will tell you that the parents answer wasn't reasonable.
 else {
-    print("Invalid Integer. Please Select a reasonable maximum weekly hours of device usage.")
+    print("Invalid Integer. Please Select a reasonable maximum weekly hours of device usage(1-5hrs).")
 }
     
 
