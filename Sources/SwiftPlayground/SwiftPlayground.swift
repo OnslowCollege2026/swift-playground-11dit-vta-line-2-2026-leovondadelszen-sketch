@@ -107,3 +107,68 @@ else {
 
 }
 }
+
+
+
+ print("Hello, world!")
+
+let isRunning = true
+
+print("Welcome to Personal Finance tracker!")
+
+
+
+let expenses: [String] = [""]
+let expenseCosts: [String] = [""]
+
+let minimumWeeklyHours: Double = 0
+let maximumWeeklyHours: Double = 20
+let minimumTeenageHourlyWage: Double = 18.80
+let minimumAdultHourWage: Double = 23.50
+var validWorkingHours = false
+var validHourlyWage = false
+while isRunning == true {
+print("Enter your weekly working hours!")
+var weeklyHours:Double = 0
+var hourlyWage: Double = 0
+
+let weeklyWorkingHours = Double(readLine()!)!
+if weeklyWorkingHours > minimumWeeklyHours && weeklyWorkingHours <= maximumWeeklyHours {
+    validWorkingHours = true
+weeklyHours = weeklyHours + weeklyWorkingHours
+                                                                                                            } 
+else {
+    validWorkingHours = false
+    print("Invalid Working Hours.")
+    print("Please enter an amount of working hours for the week between \(minimumWeeklyHours) and \(maximumWeeklyHours).")
+        }
+if validWorkingHours == true
+    {
+print("How much is your hourly wage?")
+let hourlyWorkingWage = Double(readLine()!)!
+if  hourlyWorkingWage >= minimumTeenageHourlyWage && hourlyWorkingWage < minimumAdultHourWage  {
+validHourlyWage = true
+hourlyWage = hourlyWage + hourlyWorkingWage
+    } else {
+validHourlyWage = false
+print("Invalid Hourly Wage.")
+print("Please enter an hourly wage that is between \(minimumTeenageHourlyWage) and \(minimumAdultHourWage) New Zealand Dollars.")
+            }
+if validHourlyWage == true {
+let weeklyIncome = weeklyHours * hourlyWage
+print("Your Weekly Income is $\(weeklyIncome).")
+print("Your expenses are \(expenses).")
+print("The cost of your expenses are \(expenseCosts).")
+
+
+
+
+
+}
+
+    }
+
+
+
+
+        }
